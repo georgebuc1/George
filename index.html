@@ -1,0 +1,128 @@
+<html>
+<head>
+
+
+  <title>GEORGE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      font-family: 'semibold','Montserrat bold', sans-serif;
+      padding: 50px;
+      -webkit-font-smoothing: antialiased;
+       font-display: antialiased;
+    text-rendering: optimizeLegibility;
+    }
+    
+    .salut {
+      color: rgb(255, 252, 252);
+      font-size: 100px;
+    }
+    
+    .eu-sunt {
+      color: rgb(255, 0, 0);
+      font-size: 100px;
+    }
+    
+    .george {
+      color: rgb(255, 0, 0);;
+      font-size: 100px;
+    }
+    
+    .salut:hover {
+      color: rgb(255, 255, 255);
+    }
+    
+    .eu-sunt:hover {
+      color: rgb(111, 32, 32);
+    }
+    
+    .george:hover {
+      color: rgb(111, 32, 32);
+    }
+    .salut {
+      color: rgb(255, 255, 255);
+      font-size: 100px;
+    }
+    
+    .salut:hover {
+      color: rgb(255, 255, 255);
+      transform: translateX(50px);
+      transition: transform 0.5s;
+    }
+    
+    .salut:not(:hover) {
+      transform: translateX(0px);
+    }
+
+    .eu-sunt:hover {
+      color: rgb(32, 54, 111);
+      transform: translateX(50px);
+      transition: transform 0.5s;
+    }
+    
+    .eu-sunt:not(:hover) {
+      transform: translateX(0px);
+    }
+
+    .george:hover {
+      color: rgb(32, 54, 111);
+      transform: translateX(50px);
+      transition: transform 0.5s;
+    }
+    
+    .george:not(:hover) {
+      transform: translateX(0px);
+    }
+    
+    
+  </style>
+</head>
+
+<div class="salut">
+  Hello.
+</div>
+<script>
+  document.querySelector(".salut").addEventListener("mouseover", function() {
+    this.textContent = "About";
+  });
+  document.querySelector(".salut").addEventListener("mouseleave", function() {
+    this.textContent = "Hello.";
+  });
+</script>
+
+
+
+<div class="eu-sunt">
+  I am
+</div>
+<script>
+  document.querySelector(".eu-sunt").addEventListener("mouseover", function() {
+    this.textContent = "Work";
+  });
+  document.querySelector(".eu-sunt").addEventListener("mouseleave", function() {
+    this.textContent = "I am";
+  });
+  document.querySelector(".eu-sunt").addEventListener("click", function() {
+        window.location.href = "work.html";
+      });
+
+</script>
+
+<div class="George">
+  George
+</div>
+<script>
+  document.querySelector(".George").addEventListener("mouseover", function() {
+    this.textContent = "Contact";
+  });
+  document.querySelector(".George").addEventListener("mouseleave", function() {
+    this.textContent = "George";
+  });
+</script>
+
+  <!-- <div class="salut">Hello.</div> -->
+  <!-- <div class="eu-sunt">I am</div> -->
+  <!-- <div class="george">George</div> -->
+</body>
+</html>
